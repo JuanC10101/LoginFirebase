@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h3>Inicio de Sesión</h3>
+        <form id="loginForm">
+            <div class="iniciosesion">
+                <label for="edtuser">Usuario:</label>
+                <input type="email" id="edtuser" name="username" required>
+            </div>
+
+            <div class="iniciosesion">
+                <label for="edtpassword">Contraseña:</label>
+                <input type="password" id="edtpassword" name="password" required>
+            </div>
+
+            <input type="submit" id="loginbtn" value="Iniciar Sesión">
+        </form>
+     
+        <button id="logoutbtn">Cerrar Sesión</button>
+    </div>
+
+    <script type="module" src="../controllers/autentication.js"></script>
+</body>
+</html>
